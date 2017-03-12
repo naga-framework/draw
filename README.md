@@ -9,7 +9,7 @@ you can find more information on the given link.
 
     https://developer.mozilla.org/fr/demosdetail/open-whiteboard
 
-[draw](http://github.com/mihawk/draw) was first made as a demo on the [ChicagoBoss framework](), to show how you could
+[draw](http://github.com/mihawk/draw) was first made as a demo on the [ChicagoBoss framework](http://chicagoboss.org), to show how you could
 handle websocket inside ChicagoBoss, since then i have made [naga-framework](http://github.com/naga-framework/naga)
 
 Quickstart
