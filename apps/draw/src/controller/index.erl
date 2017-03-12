@@ -18,7 +18,7 @@ event(#client{data={draw,Data}}) -> draw(Data);
 event(#client{data=D})           -> wf:send(?TOPIC,#client{data={draw,D}}).
 
 % -----------------------------------------------------------------------------
-% internal funciton
+% internal function
 % -----------------------------------------------------------------------------
 draw(Data) -> 
   Exec = wf:f("var dt = ~s;if(dt.socketid !== -1)"
