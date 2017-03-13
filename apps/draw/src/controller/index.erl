@@ -13,9 +13,9 @@ index(<<"GET">>, _, _) -> ok.
 
 
 %% WS EVENT HANDLING
-event(init)                      -> wf:reg(?TOPIC);
-event(#client{data={draw,Data}}) -> draw(Data);
-event(#client{data=D})           -> wf:send(?TOPIC,#client{data={draw,D}}).
+event(init)                     -> wf:reg(?TOPIC);
+event(#client{data={Sid,Data}}) -> case wf:session_id() of Sid -> skip; _-> draw(Data) end;
+event(#client{data=D})          -> wf:send(?TOPIC,#client{data={wf:session_id(),D}}).
 
 % -----------------------------------------------------------------------------
 % internal function
