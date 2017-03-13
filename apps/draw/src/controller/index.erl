@@ -11,19 +11,14 @@
 %% INDEX CONTROLLER
 index(<<"GET">>, _, _) -> ok.
 
-
 %% WS EVENT HANDLING
 event(init)                     -> wf:reg(?TOPIC);
 event(#client{data={Sid,Data}}) -> case wf:session_id() of Sid -> skip; _-> draw(Data) end;
 event(#client{data=D})          -> wf:send(?TOPIC,#client{data={wf:session_id(),D}}).
 
-% -----------------------------------------------------------------------------
-% internal function
-% -----------------------------------------------------------------------------
 draw(Data) -> 
   Exec = wf:f("var dt = ~s;if(dt.socketid !== -1)"
-              "{mySocketId =dt.socketid;}"
-              " else "
+              "{mySocketId =dt.socketid;} else "
               "{setupDraw(dt, true);}",[Data]),
   wf:wire(Exec).
 
