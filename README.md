@@ -52,6 +52,6 @@ draw(Data) ->
   wf:wire(Exec).
 ```
 
-Open `http://localhost:8001/draw` in your browser,
+Open `http://localhost:8001/` in your browser,
 open a second web browser on the same url, or a tab
 in the first browser then start to draw. :)
