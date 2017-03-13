@@ -1,5 +1,5 @@
-Draw is a demo of how websocket is handle in a NAGA app
-=======================================================
+Draw demo of realtime sharing drawing board
+===========================================
 
 Background
 ----------
