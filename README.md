@@ -1,5 +1,5 @@
-Draw demo of realtime sharing drawing board
-===========================================
+Draw: demo of realtime sharing drawing board
+============================================
 
 Background
 ----------
