@@ -12,6 +12,23 @@ you can find more information on the given link.
 [draw](http://github.com/mihawk/draw) was first made as a demo on the [ChicagoBoss framework](http://chicagoboss.org), to show how you could
 handle websocket inside ChicagoBoss, since then i have made [naga-framework](http://github.com/naga-framework/naga)
 
+Install erlang/OTP
+------------------
+
+- install from source code using [kerl](https://github.com/kerl/kerl)
+	
+```bash
+ $ cd ~
+ $ mkdir bin
+ $ cd bin
+ $ curl -O https://raw.githubusercontent.com/kerl/kerl/master/kerl
+ $ chmod u+x kerl
+ $ kerl list releases
+ $ kerl build 19.2 19.2
+ $ kerl install 19.2 ~/kerl/19.2
+ $ .  ~/kerl/19.2/activate
+```
+    
 Quickstart
 ----------
 
