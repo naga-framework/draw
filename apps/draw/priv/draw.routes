@@ -1,6 +1,6 @@
 [
  { "/favicon.ico",cowboy_static,{priv_file,draw,"static/favicon.ico"}}
-,{ "/static/n2o/[...]",naga_static,{dir,"apps/n2o/priv",[{mimetypes,cow_mimetypes,all}]}}
+,{ "/static/n2o/[...]",naga_static,{dir,"deps/n2o/priv",[{mimetypes,cow_mimetypes,all}]}}
 ,{ "/static/[...]",naga_static,{dir,"apps/draw/priv/static",[{mimetypes,cow_mimetypes,all}]}}
 
 ,{ "/", [{app, draw},{ctrl, index},{action,index}], []}
